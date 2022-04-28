@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+    {% if message %}
+        <div>
+            <script>
+                myFunction()
+                function myFunction()
+                {
+                    alert("please enter valid part_id");
+                    window.location.replace("http://localhost:5000/home");
+                }
+            </script>
+        </div>
+    {% endif %}
+
+
+{% endblock %}
